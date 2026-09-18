@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.venv
+
+# Environment & Secrets
+.env
+*.env
+
+# SQLite Database & Generated Artifacts
+*.db
+*.sqlite3
+generated/*.db
+generated/invoices/*.pdf
+generated/reports/*.pptx
+generated/reports/charts/*.png
+!generated/.gitkeep
+!generated/invoices/.gitkeep
+!generated/reports/.gitkeep
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db

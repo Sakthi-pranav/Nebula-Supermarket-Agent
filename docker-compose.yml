@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  supermarket-agent:
+    build: .
+    container_name: supermarket_ops_agent
+    env_file:
+      - .env
+    volumes:
+      - ./generated:/app/generated
+    restart: unless-stopped
