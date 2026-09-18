@@ -79,20 +79,7 @@ class SupermarketOpsAgent:
             msg = choice.message
             
             # Convert message to dict format for trajectory
-            msg_dict = {"role": "assistant"}
-            if msg.content:
-                msg_dict["content"] = msg.content
-            if msg.tool_calls:
-                msg_dict["tool_calls"] = [
-                    {
-                        "id": tc.id,
-                        "type": "function",
-                        "function": {
-                            "name": tc.function.name,
-                            "arguments": tc.function.arguments
-                        }
-                    } for tc in msg.tool_calls
-                ]
+            msg_dict = msg.model_dump(exclude_none=True)
 
             messages.append(msg_dict)
 
