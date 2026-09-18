@@ -18,6 +18,9 @@ venv.bak/
 # SQLite Database & Generated Artifacts
 *.db
 *.sqlite3
+*.db-journal
+*.db-shm
+*.db-wal
 generated/*.db
 generated/invoices/*.pdf
 generated/reports/*.pptx

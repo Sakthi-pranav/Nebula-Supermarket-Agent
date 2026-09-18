@@ -67,7 +67,7 @@ def main():
         print("🌱 Running database seeding...")
         seed()
     elif args.bot:
-        from app.telegram.bot import run_bot
+        from app.telegram_bot.bot import run_bot
         run_bot()
     elif args.cli:
         run_cli_interactive()

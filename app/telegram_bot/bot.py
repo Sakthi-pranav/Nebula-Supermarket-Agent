@@ -1,7 +1,7 @@
 import logging
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 from app.config import settings
-from app.telegram.handlers import start_command, help_command, reset_command, handle_message
+from app.telegram_bot.handlers import start_command, help_command, reset_command, handle_message
 
 logger = logging.getLogger(__name__)
 
